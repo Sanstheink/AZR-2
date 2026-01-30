@@ -52,3 +52,6 @@ header {
   justify-content: space-between;
   border-bottom: 1px solid #0ff;
 }
+body.red { background: darkred; }
+body.yellow { background: #665500; }
+body.blue { background: #002244; }
