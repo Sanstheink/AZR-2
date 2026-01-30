@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: black;
+  color: #0ff;
+}
+
+.screen {
+  display: none;
+  height: 100vh;
+  padding: 20px;
+}
+
+.screen.active {
+  display: block;
+}
+
+.boot-log {
+  height: 70%;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #033;
+}
+
+#bootProgress {
+  height: 100%;
+  width: 0%;
+  background: #0ff;
+  transition: width 0.4s;
+}
+
+input, button {
+  background: black;
+  border: 1px solid #0ff;
+  color: #0ff;
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+}
+
+nav button {
+  width: 48%;
+  margin: 1%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #0ff;
+}
