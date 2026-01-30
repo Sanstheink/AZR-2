@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>USS AZURA NCC-1626-G</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- BOOT -->
+<div id="boot-screen" class="screen active">
+  <div class="boot-log" id="bootLog"></div>
+  <div class="progress-bar">
+    <div id="bootProgress"></div>
+  </div>
+</div>
+
+<!-- LOGIN -->
+<div id="login-screen" class="screen">
+  <h1>USS AZURA</h1>
+  <p>LCARS Security Terminal</p>
+  <input type="password" id="authCode" placeholder="Authorization Code"/>
+  <button onclick="login()">AUTHORIZE</button>
+  <p id="loginMsg"></p>
+</div>
+
+<!-- MAIN -->
+<div id="main-ui" class="screen">
+  <header>
+    <span>USS AZURA NCC-1626-G</span>
+    <span id="userRole"></span>
+  </header>
+
+  <nav>
+    <button onclick="openStation('bridge')">BRIDGE</button>
+    <button onclick="openStation('engineering')">ENGINEERING</button>
+    <button onclick="openStation('medical')">MEDICAL</button>
+    <button onclick="openStation('comms')">COMMS</button>
+    <button onclick="openStation('starbase')">STARBASE</button>
+  </nav>
+
+  <section id="stationView">
+    <h2>Awaiting Command…</h2>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+                          </html>
