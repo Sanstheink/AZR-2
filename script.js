@@ -61,3 +61,13 @@ function openStation(station) {
 
   view.innerHTML = `<h2>${station.toUpperCase()} STATION ONLINE</h2>`;
 }
+function triggerAlert(type) {
+  document.body.className = type;
+  new Audio("https://assets.mixkit.co/active_storage/sfx/2127/2127-preview.mp3").play();
+}
+
+function cancelAlert() {
+  if (role !== "Crew") {
+    document.body.className = "";
+  }
+}
